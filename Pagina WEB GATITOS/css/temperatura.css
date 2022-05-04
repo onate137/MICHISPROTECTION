@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background-color: white;
+}
+
+
+/* * ============================== */
+/* * ===== Temperaturaaaaaaaaa ==== */
+/* * ============================== */
+
+#main-container{
+	margin: 150px auto;
+	width: 600px;
+}
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: var(--colortodo);
+	border-bottom: solid 5px #23167a;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: var(--colortodo);
+	color: white;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo2 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo1 {
+    color: var(--colortodo);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.titulo1:hover {
+    text-decoration: underline;
+    color: #414141;
+}
+
+.titulo2:hover {
+    text-decoration: underline;
+    color: #414141;
+}
+
+/* * ============== VARIABLES PARA COLORES!! ================ */
+
+:root {
+    --colortodo: #6055ac;
+    --fondocolor: #fff;
+}
+
+/* * ============================== */
+/* * ===== BARRA DE NAVEGACION ==== */
+/* * ============================== */
+
+.navbar {
+    background: var(--colortodo);
+}
+.contenedor-navbar {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    line-height: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.text{
+    color: #fff;
+    text-decoration: none !important;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+/* * ============================== */
+/* * == HEADER // PARTE DE ARRIBA = */
+/* * ============================== */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #21156ee7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(275, 55%, 27%, 0.478), #21156ee7), url(../img/fondogato4.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b1f6b7a, #21156ee7), url(../img/fondogato5.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* DISEÑO DE LA TABLA */
+
+#main-container{
+    margin: 150 auto;
+    width: 600px;
+}
+
+
+
+/* * ============================== */
+/* * =====   FOTOS  MASCOTAS ====== */
+/* * ============================== */
+
+
+.Mascotas {
+    background: var(--colortodo);
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:  1px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: var(--colortodo);
+    opacity: 0.8;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+
+
+/* * ============================== */
+/* * ===== FIN DE LA PAGINA ====== */
+/* * ============================== */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--colortodo);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+@media screen and (max-width:900px){
+@media screen and (max-width:500px){
+
+    /* FIN DE LA PAGINA */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+}
+
